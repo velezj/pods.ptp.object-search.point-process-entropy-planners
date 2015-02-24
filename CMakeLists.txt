@@ -19,6 +19,8 @@ add_library( ptp.object-search.point-process-entropy-planners SHARED
 
 pods_install_headers( 
   src/one_action_entropy_reduction_planner.hpp
+  DESTINATION
+  point-process-entropy-planners
   )
 
 pods_use_pkg_config_packages(ptp.object-search.point-process-entropy-planners
@@ -31,7 +33,7 @@ pods_install_libraries( ptp.object-search.point-process-entropy-planners )
 pods_install_pkg_config_file(ptp.object-search.point-process-entropy-planners
     CFLAGS
     LIBS -lptp.object-search.point-process-entropy-planners
-    REQUIRES p2l-planner-core p2l-igmm-point-process p2l-ruler-point-process
+    REQUIRES boost-1.54.0 p2l-planner-core p2l-igmm-point-process p2l-ruler-point-process
     VERSION 0.0.1)
   
   

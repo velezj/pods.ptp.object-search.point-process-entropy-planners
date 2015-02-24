@@ -1,17 +1,18 @@
 
 
-#if !defined( __PLANNER_CORE_one_action_entropy_reduction_planner_HPP__ )
-#define __PLANNER_CORE_one_action_entropy_reduction_planner_HPP__
+#if !defined( __POINT_PROCESS_ENTROPY_PLANNERS_one_action_entropy_reduction_planner_HPP__ )
+#define __POINT_PROCESS_ENTROPY_PLANNERS_one_action_entropy_reduction_planner_HPP__
 
 
-#include "planner.hpp"
+#include <planner-core/planner.hpp>
 #include <point-process-core/entropy.hpp>
 
 #define SAMPLING_VERBOSE false
 
-namespace planner_core {
+namespace point_process_entropy_planners {
 
 
+  using namespace planner_core;
   using namespace point_process_core;
   using namespace math_core;
 

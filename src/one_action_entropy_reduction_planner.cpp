@@ -16,10 +16,11 @@
 #define VERBOSE false
 #define PRINT_WARNINGS true
 
+using namespace planner_core;
 using namespace point_process_core;
 using namespace math_core;
 
-namespace planner_core {
+namespace point_process_entropy_planners {
 
   //=======================================================================
   //=======================================================================

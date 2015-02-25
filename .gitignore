@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# PODS build dir
+pod-build/

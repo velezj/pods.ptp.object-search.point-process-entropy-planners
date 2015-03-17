@@ -24,16 +24,16 @@ pods_install_headers(
   )
 
 pods_use_pkg_config_packages(ptp.object-search.point-process-entropy-planners
-  p2l-planner-core
-  p2l-igmm-point-process
-  p2l-ruler-point-process
+  object-search.planner-core
+  object-search.igmm-point-process
+  object-search.ruler-point-process
   )
 
 pods_install_libraries( ptp.object-search.point-process-entropy-planners )
 pods_install_pkg_config_file(ptp.object-search.point-process-entropy-planners
     CFLAGS
     LIBS -lptp.object-search.point-process-entropy-planners
-    REQUIRES boost-1.54.0 p2l-planner-core p2l-igmm-point-process p2l-ruler-point-process
+    REQUIRES boost-1.54.0 object-search.planner-core object-search.igmm-point-process object-search.ruler-point-process
     VERSION 0.0.1)
   
   
